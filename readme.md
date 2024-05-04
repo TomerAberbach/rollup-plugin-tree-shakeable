@@ -105,9 +105,11 @@ And if a user of your package writes `import { f1 } from 'your-package'`, then
 bundlers _will_ tree-shake and strip out all functions other than `f1` from the
 final bundle.
 
-> [!CAUTION] Only use this plugin if your package is actually tree-shakeable,
-> meaning that each export would still function correctly if all the other
-> exports were stripped out.
+> [!CAUTION]
+>
+> Only use this plugin if your package is actually tree-shakeable, meaning that
+> each export would still function correctly if all the other exports were
+> stripped out.
 >
 > This plugin does not give your package that property. It only _convinces_
 > bundlers that this is the case.
