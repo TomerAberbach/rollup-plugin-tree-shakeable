@@ -68,7 +68,9 @@ You might expect that if a user of your package writes
 omit `f1`, `f2`, etc. from the final bundle. Unfortunately, bundlers will
 generally include _all_ of your package's code in this case
 ([yes, even if you set `"sideEffects": false` in your `package.json`](https://github.com/evanw/esbuild/issues/1241))
-because the bundler cannot easily tell that `withLogging` is side-effect free.
+because the bundler cannot easily tell that `withLogging` is side-effect free
+and it's called at the "top-level" of your package. There are _many_ other
+coding patterns that cause the same issue.
 
 This plugin solves the problem by automatically adding
 [`@__PURE__` annotations](https://esbuild.github.io/api/#pure) to all top-level
