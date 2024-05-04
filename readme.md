@@ -9,12 +9,6 @@
   <a href="https://github.com/TomerAberbach/rollup-plugin-tree-shakeable/actions">
     <img src="https://github.com/TomerAberbach/rollup-plugin-tree-shakeable/workflows/CI/badge.svg" alt="CI" />
   </a>
-  <a href="https://unpkg.com/rollup-plugin-tree-shakeable/dist/index.min.js">
-    <img src="https://deno.bundlejs.com/?q=rollup-plugin-tree-shakeable&badge" alt="gzip size" />
-  </a>
-  <a href="https://unpkg.com/rollup-plugin-tree-shakeable/dist/index.min.js">
-    <img src="https://deno.bundlejs.com/?q=rollup-plugin-tree-shakeable&config={%22compression%22:{%22type%22:%22brotli%22}}&badge" alt="brotli size" />
-  </a>
 </div>
 
 <div align="center">
