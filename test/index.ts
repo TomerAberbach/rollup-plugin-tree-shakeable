@@ -79,11 +79,14 @@ const o1 = { a: 1, b: 2 };
 const o2 = /*@__PURE__*/(()=>({ a: 1, b: 2, ...entries }))();
 const spread = /*@__PURE__*/(()=>([...entries]))();
 
+const o3 = {};
+o3.x = 2;
+
 const p = /*@__PURE__*/(()=>({}.hasOwnProperty))();
 
 const answer = 42;
 
-export { a, answer, c, o1, o2, p, spread };
+export { a, answer, c, o1, o2, o3, p, spread };
 "
 `)
   const result = await build({
@@ -93,7 +96,7 @@ export { a, answer, c, o1, o2, p, spread };
     write: false,
   })
   expect(result.outputFiles[0]!.text).toMatchInlineSnapshot(`
-""use strict";(()=>{var o=42;console.log(o);})();
+""use strict";(()=>{var s={};s.x=2;var o=42;console.log(o);})();
 "
 `)
 })

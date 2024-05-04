@@ -41,6 +41,10 @@ export const o1 = { a: 1, b: 2 }
 export const o2 = { a: 1, b: 2, ...entries }
 export const spread = [...entries]
 
+const o3 = {}
+o3.x = 2
+export { o3 }
+
 export const p = {}.hasOwnProperty
 
 export const answer = 42

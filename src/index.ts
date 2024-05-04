@@ -67,6 +67,12 @@ const treeShakeable = (): Plugin => ({
             magicString.appendLeft(start, `/*@__PURE__*/`)
             break
 
+          case `AssignmentExpression`:
+            // Skip the lefthand side of an assignment because we can't wrap it
+            // in an IIFE below if it's a member expression.
+            skipLater.add(node.left)
+            break
+
           case `MemberExpression`:
             magicString
               .appendLeft(start, `/*@__PURE__*/(()=>(`)
