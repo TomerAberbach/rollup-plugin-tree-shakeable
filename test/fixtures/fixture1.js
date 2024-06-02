@@ -47,4 +47,6 @@ export { o3 }
 
 export const p = {}.hasOwnProperty
 
+export const x = o3.x()
+
 export const answer = 42

@@ -84,9 +84,11 @@ o3.x = 2;
 
 const p = /*@__PURE__*/(()=>({}.hasOwnProperty))();
 
+const x = /*@__PURE__*/o3.x();
+
 const answer = 42;
 
-export { a, answer, c, o1, o2, o3, p, spread };
+export { a, answer, c, o1, o2, o3, p, spread, x };
 "
 `)
   const result = await build({
