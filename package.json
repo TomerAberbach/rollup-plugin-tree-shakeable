@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "author": {
     "name": "Tomer Aberbach",
-    "email": "tomeraberbach@gmail.com",
+    "email": "tomer@aberba.ch",
     "url": "https://tomeraberba.ch"
   },
   "description": "A Rollup plugin that automatically annotates your module as tree shakeable.",
