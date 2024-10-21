@@ -2,6 +2,7 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { rollup } from 'rollup'
 import { build } from 'esbuild'
+import { expect, test } from 'vitest'
 import treeShakeable from '../src/index.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))

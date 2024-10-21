@@ -128,5 +128,5 @@ For bugs and feature requests,
 
 [MIT](https://github.com/TomerAberbach/rollup-plugin-tree-shakeable/blob/main/license)
 © [Tomer Aberbach](https://github.com/TomerAberbach) \
-[Apache 2.0](https://github.com/TomerAberbach/rollup-plugin-tree-shakeable/blob/main/license-apache)
-© [Google](https://github.com/TomerAberbach/rollup-plugin-tree-shakeable/blob/main/notice-apache)
+[Apache 2.0](https://github.com/TomerAberbach/rollup-plugin-tree-shakeable/blob/main/license-apache) ©
+[Google](https://github.com/TomerAberbach/rollup-plugin-tree-shakeable/blob/main/notice-apache)
