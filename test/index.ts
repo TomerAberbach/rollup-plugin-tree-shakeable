@@ -86,9 +86,11 @@ const p = /*@__PURE__*/(()=>({}.hasOwnProperty))();
 
 const x = /*@__PURE__*/o3.x();
 
+const nested = /*@__PURE__*/logAndReturn(/*@__PURE__*/logAndReturn());
+
 const answer = 42;
 
-export { a, answer, c, o1, o2, o3, p, spread, x };
+export { a, answer, c, nested, o1, o2, o3, p, spread, x };
 "
 `)
   const result = await build({

@@ -65,7 +65,7 @@ const treeShakeable = (): Plugin => ({
           case `CallExpression`:
           case `NewExpression`:
             magicString.appendLeft(start, `/*@__PURE__*/`)
-            this.skip()
+            skipLater.add(node.callee)
             break
 
           case `AssignmentExpression`:

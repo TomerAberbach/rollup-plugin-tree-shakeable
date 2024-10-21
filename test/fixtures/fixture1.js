@@ -49,4 +49,6 @@ export const p = {}.hasOwnProperty
 
 export const x = o3.x()
 
+export const nested = logAndReturn(logAndReturn())
+
 export const answer = 42
