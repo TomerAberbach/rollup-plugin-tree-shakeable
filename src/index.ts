@@ -17,6 +17,7 @@ const treeShakeable = (): Plugin => ({
 
         const { start, end } = node as unknown as AstNodeLocation
 
+        // eslint-disable-next-line typescript/switch-exhaustiveness-check
         switch (node.type) {
           // Any nodes inside functions are not "top level" and don't impact
           // tree shaking. Any control flow or mutation must be initialization
