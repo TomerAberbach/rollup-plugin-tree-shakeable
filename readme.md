@@ -68,7 +68,7 @@ export const f3 = withLogging(/* ... */)
 You might expect that if a user of your package writes
 `import { f1 } from 'your-package'`, then bundlers will
 [tree shake](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking) and
-omit `f1`, `f2`, etc. from the final bundle. Unfortunately, bundlers will
+omit `f2` and `f3` from the final bundle. Unfortunately, bundlers will
 generally include _all_ of your package's code in this case
 ([yes, even if you set `"sideEffects": false` in your `package.json`](https://github.com/evanw/esbuild/issues/1241))
 because `withLogging` is called at the "top-level" of your package and the
